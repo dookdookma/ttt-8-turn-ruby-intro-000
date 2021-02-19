@@ -36,8 +36,8 @@ def turn(board)
     move(board, index, current_player = "X")
     display_board(board)
   else
-    turn(board)
     until valid_move?(board, index) == true
+      turn(board)
     end
   end
 end
